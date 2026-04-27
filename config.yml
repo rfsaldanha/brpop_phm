@@ -1,0 +1,16 @@
+# config.yml
+sources:
+  population_total:
+    - datasus
+    - datasus2024
+    - ibge
+    - ufrn
+  population_age_sex:
+    - datasus
+    - datasus2024
+    - ufrn
+reference_source_total: ibge
+reference_source_age_sex: datasus2024
+rate_multiplier: 100000
+standard_year: 2010
+classification_groups: 5

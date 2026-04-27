@@ -1,0 +1,28 @@
+---
+title: "Population denominator sensitivity analysis"
+format:
+  html:
+    toc: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+source("../R/functions.R")
+```
+
+This Quarto file can be used as an exploratory analysis report after running the numbered scripts.
+
+```{r}
+if (file.exists("../output/tables/population_reference_summary.csv")) {
+  readr::read_csv("../output/tables/population_reference_summary.csv", show_col_types = FALSE) |> head()
+}
+```
+
+```{r}
+if (file.exists("../output/tables/rate_reference_summary.csv")) {
+  readr::read_csv("../output/tables/rate_reference_summary.csv", show_col_types = FALSE) |> head()
+}
+```
